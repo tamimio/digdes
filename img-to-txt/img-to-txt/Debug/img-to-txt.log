@@ -1,0 +1,16 @@
+﻿Построение начато 26.09.2017 13:39:43.
+     1>Проект "C:\Users\usera\Documents\Visual Studio 2012\Projects\img-to-txt\img-to-txt\img-to-txt.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         D:\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "Исходный код.cpp"
+         Исходный код.cpp
+     1>c:\users\usera\documents\visual studio 2012\projects\img-to-txt\img-to-txt\исходный код.cpp(39): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\microsoft visual studio 11.0\vc\include\stdio.h(218): см. объявление "fopen"
+       Link:
+         D:\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\usera\Documents\Visual Studio 2012\Projects\img-to-txt\Debug\img-to-txt.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\usera\Documents\Visual Studio 2012\Projects\img-to-txt\Debug\img-to-txt.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\usera\Documents\Visual Studio 2012\Projects\img-to-txt\Debug\img-to-txt.lib" /MACHINE:X86 Debug\EasyBMP.obj
+         "Debug\Исходный код.obj"
+         img-to-txt.vcxproj -> C:\Users\usera\Documents\Visual Studio 2012\Projects\img-to-txt\Debug\img-to-txt.exe
+     1>Построение проекта "C:\Users\usera\Documents\Visual Studio 2012\Projects\img-to-txt\img-to-txt\img-to-txt.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:03.97
