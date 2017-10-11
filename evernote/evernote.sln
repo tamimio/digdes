@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "evernote.Model", "evernote.Model\evernote.Model.csproj", "{D0EA8FD1-E794-4D2C-8E07-BBB8BC322832}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "evernote.Data", "evernote.Data\evernote.Data.csproj", "{F4740856-A268-4AAF-8A0F-9DACBB4DC726}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0EA8FD1-E794-4D2C-8E07-BBB8BC322832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EA8FD1-E794-4D2C-8E07-BBB8BC322832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EA8FD1-E794-4D2C-8E07-BBB8BC322832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EA8FD1-E794-4D2C-8E07-BBB8BC322832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4740856-A268-4AAF-8A0F-9DACBB4DC726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4740856-A268-4AAF-8A0F-9DACBB4DC726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4740856-A268-4AAF-8A0F-9DACBB4DC726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4740856-A268-4AAF-8A0F-9DACBB4DC726}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

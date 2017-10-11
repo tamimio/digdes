@@ -1,0 +1,2 @@
+C:\Users\usera\Documents\Visual Studio 2012\Projects\miscellanea\digdes\evernote\evernote.Model\bin\Debug\evernote.Model.exe.config
+C:\Users\usera\Documents\Visual Studio 2012\Projects\miscellanea\digdes\evernote\evernote.Model\obj\Debug\evernote.Model.csprojResolveAssemblyReference.cache
