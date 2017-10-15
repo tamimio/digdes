@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 using evernote.Model;
 
-namespace evernote.Data
+namespace evernote.DataLayer
 {
     public interface CategoryRepository
     {
-        //
+        Category Create(Guid _UserID, string name);
     }
 }

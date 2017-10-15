@@ -14,7 +14,9 @@ namespace evernote.Model
         public User User_ID { get; set; } // owner
         public DateTime Create { get; set; }
         public DateTime Update { get; set; }
-        // связь с Category
-        // связь с Share
+
+        public IEnumerable<Category> Categories { get; set; }
+
+       // public IEnumerable<User> Shared { get; set; }
     }
 }

@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 using evernote.Model;
 
-namespace evernote.Data
+namespace evernote.DataLayer
 {
     public interface NoteRepository
     {
         Note Create(Note _note);
         Note Update(Note _note);
         void Delete(Guid _id);
-        // связь с User
+
+        IEnumerable<Note> GetUserNotes(Guid userId);
     }
 }

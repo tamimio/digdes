@@ -7,7 +7,7 @@
     <ProjectGuid>{F4740856-A268-4AAF-8A0F-9DACBB4DC726}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>evernote.Data</RootNamespace>
+    <RootNamespace>evernote.DataLayer</RootNamespace>
     <AssemblyName>evernote.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using evernote.Model;
 
-namespace evernote.Data
+namespace evernote.DataLayer
 {
     public interface UserRepository
     {
