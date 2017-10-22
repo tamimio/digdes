@@ -1,50 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient; //
-//using System.Linq;
-//using System.Text;
+using System.Data.SqlClient; 
+using System.Text;
 using System.Threading.Tasks;
 
 using evernote.Model;
 
 namespace evernote.DataLayer.sql
 {
-    public class UserRep : UserRepository
+    public class UserRep : IUserRepository
     {
-        private string connect;
+		private string connectStr;
+		private ICategoryRepository catRep;
 
-        public UserRep(string _connect) { connect = _connect; }
+        public UserRep(string connect) { connectStr = connect; }
+		public UserRep(string connectionString, ICategoryRepository categoriesRepository)
+        {
+            connectStr = connectionString;
+            catRep = categoriesRepository;
+        }
 
         //-----
 
-        public User Create(User _user)
+        public User Create(User user)
         {
-            using (SqlConnection sqlConnect = new SqlConnection(connect))
+            using (SqlConnection sqlConnect = new SqlConnection(connectStr))
             {
                 sqlConnect.Open();
                 using (SqlCommand cmd = sqlConnect.CreateCommand())
                 {
-                    _user.ID = Guid.NewGuid();
+                    user.ID = Guid.NewGuid();
                     cmd.CommandText = "insert into users (ID, Name) values (@ID, @Name)";
-                    cmd.Parameters.AddWithValue("@ID", _user.ID);
-                    cmd.Parameters.AddWithValue("@Name", _user.Name);
+                    cmd.Parameters.AddWithValue("@ID", user.ID);
+                    cmd.Parameters.AddWithValue("@Name", user.Name);
                     cmd.ExecuteNonQuery();
-                    return _user;
+                    return user;
 
                 }
             }
         }
 
 
-        public User Get(Guid _id)
+        public User Get(Guid id)
         {
-            using (SqlConnection sqlConnect = new SqlConnection(connect))
+            using (SqlConnection sqlConnect = new SqlConnection(connectStr))
 			{
 				sqlConnect.Open();
 				using (SqlCommand cmd = sqlConnect.CreateCommand())
 				{
 					cmd.CommandText = "select id, name from users where ID = @id";
-					cmd.Parameters.AddWithValue("@id", _id);
+					cmd.Parameters.AddWithValue("@id", id);
 
 					using (var reader = cmd.ExecuteReader())
 					{
@@ -63,11 +68,9 @@ namespace evernote.DataLayer.sql
 		}
 
 
-
-
         public void Delete(Guid _id)
         {
-            using (SqlConnection sqlConnection = new SqlConnection(connect))
+            using (SqlConnection sqlConnection = new SqlConnection(connectStr))
             {
                 sqlConnection.Open();
                 using (SqlCommand cmd = sqlConnection.CreateCommand())

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace evernote.Model
 {
@@ -17,6 +14,6 @@ namespace evernote.Model
 
         public IEnumerable<Category> Categories { get; set; }
 
-       // public IEnumerable<User> Shared { get; set; }
+        public IEnumerable<User> Shares { get; set; }
     }
 }
