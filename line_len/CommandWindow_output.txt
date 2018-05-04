@@ -1,0 +1,8 @@
+>> line_len
+Input path -> 5
+Number of lines: 5
+Number of horizontal lines: 2
+Their length: 73 45 
+Number of vertical lines: 3
+Their length: 29 105 28 
+>> 
