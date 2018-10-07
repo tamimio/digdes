@@ -1,3 +1,9 @@
+# I still don't get your grade method:
+# Like, we calc. sum of 1-3 tests and get 50 points which is B;
+# But then we calc. sum of this and 4th test (50+50=100 points), whis is still B
+# in the output array with letter-representation of grades.
+# So I solve this task as I got it from the 1st e-mail.
+
 grade=[]
 for i in range(1,5):
     print("Input grade for the ", i, " task -> ")
