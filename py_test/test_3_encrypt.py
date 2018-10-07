@@ -10,7 +10,7 @@ print("Offset: ", offset)
 print ("Original text: ", orig_txt)
 
 for i in range(0, len(orig_txt)):
-   if symb.find(orig_txt[i]) == -1 : # if orig_txt[i] != ' ' :
+   if symb.find(orig_txt[i]) == -1 : # comment this line to encrypt w/ saving spaces and other symbols (as in example)
         index = (alphabet.find(orig_txt[i]) + offset) % (len(alphabet)-1)
         enc_txt = enc_txt[:i] + alphabet[index] + enc_txt[i+1:]
     
